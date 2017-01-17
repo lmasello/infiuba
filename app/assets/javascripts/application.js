@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.knob
+//= require jquery.nav
+//= require jquery.vegas.min
+//= require owl.carousel.min
+//= require smoothscroll
+//= require wow.min
+//= require zerif
 //= require_tree .

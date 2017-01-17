@@ -1,25 +1,23 @@
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
-
+ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+# Use postgresql as the database for Active Record
+gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Use fontawesome for common icons
+gem 'font-awesome-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -27,27 +25,105 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+# Use autoprefixer to avoid writing css prefixes
+gem 'autoprefixer-rails'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem 'bootstrap-sass'
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
-end
+gem 'carrierwave'
+
+# Authentication
+gem 'devise'
+
+gem 'responders'
+
+gem 'active_model_serializers'
+
+gem 'foreman'
+
+# Active Admin
+gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
+gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin'
+
+# Enables Slim templates
+gem 'slim-rails'
+
+# Authorization Policies
+gem 'pundit'
+
+# Exceptions Report
+gem 'rollbar'
+
+# Postgres Insights
+gem 'pghero'
+
+# SEO Meta Tags
+gem 'metamagic'
+gem 'meta-tags'
+
+gem 'newrelic_rpm'
+
+gem 'recipient_interceptor'
+
+gem 'versionist'
+gem 'jwt'
+
+gem 'dotenv-rails', groups: [:development, :test]
+
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for modern web app frameworks and ORMs
+gem 'kaminari'
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+  # Gem to detect N+1 queries
+  gem 'bullet'
   gem 'listen', '~> 3.0.5'
+  gem 'better_errors'
+  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+  gem 'web-console'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+group :development, :test do
+  gem 'awesome_print'
+
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platform: :mri
+
+  gem 'factory_girl_rails'
+  gem 'faker'
+
+  # Use for storing credentials and not uploading them to github
+  gem 'dotenv-rails'
+
+  # Lints
+  gem 'rubocop'
+  gem 'scss_lint', require: false
+
+  # Static analysis for security vulnerabilities
+  gem 'brakeman', require: false
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'rspec-mocks'
+  gem 'database_cleaner'
+  gem 'shoulda-matchers'
+
+  gem 'capybara'
+  gem 'formulaic'
+  gem 'launchy'
+
+  gem 'timecop'
+  gem 'webmock'
+
+  # CodeStats
+  gem 'simplecov', require: false
+  gem 'codestats-metrics-reporter', require: nil
+  gem 'rubycritic', require: false
+end
+
+group :production do
+  gem 'rails_12factor'
+end
