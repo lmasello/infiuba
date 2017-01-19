@@ -16,8 +16,7 @@
 //= require jquery.knob
 //= require jquery.nav
 //= require jquery.vegas.min
-//= require owl.carousel.min
+//= require owl.carousel
 //= require smoothscroll
-//= require wow.min
-//= require zerif
+//= require wow
 //= require_tree .

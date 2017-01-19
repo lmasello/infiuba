@@ -42,8 +42,8 @@ gem 'active_model_serializers'
 gem 'foreman'
 
 # Active Admin
-gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
 gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin'
+gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
 
 # Enables Slim templates
 gem 'slim-rails'
@@ -58,29 +58,33 @@ gem 'rollbar'
 gem 'pghero'
 
 # SEO Meta Tags
-gem 'metamagic'
 gem 'meta-tags'
+gem 'metamagic'
 
 gem 'newrelic_rpm'
 
 gem 'recipient_interceptor'
 
-gem 'versionist'
 gem 'jwt'
+gem 'versionist'
 
-gem 'dotenv-rails', groups: [:development, :test]
-
-# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for modern web app frameworks and ORMs
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for modern web
+# app frameworks and ORMs
 gem 'kaminari'
+
+gem 'animate-rails'
+gem 'owlcarousel-rails'
+gem 'wow-rails'
 
 group :development do
   # Gem to detect N+1 queries
+  gem 'better_errors'
   gem 'bullet'
   gem 'listen', '~> 3.0.5'
-  gem 'better_errors'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  # Spring speeds up development by keeping your application running in the background. Read more:
+  # https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
@@ -106,9 +110,9 @@ group :development, :test do
 end
 
 group :test do
-  gem 'rspec-rails'
-  gem 'rspec-mocks'
   gem 'database_cleaner'
+  gem 'rspec-mocks'
+  gem 'rspec-rails'
   gem 'shoulda-matchers'
 
   gem 'capybara'
@@ -119,9 +123,9 @@ group :test do
   gem 'webmock'
 
   # CodeStats
-  gem 'simplecov', require: false
   gem 'codestats-metrics-reporter', require: nil
   gem 'rubycritic', require: false
+  gem 'simplecov', require: false
 end
 
 group :production do
