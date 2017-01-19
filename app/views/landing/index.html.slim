@@ -1,6 +1,3 @@
-.preloader
-  .status  
-
 header#home.header
   #main-nav.navbar.navbar-inverse.bs-docs-nav role="banner"
     .container
@@ -44,29 +41,33 @@ section#beforeArrival.focus
         | Here you will find some resources regarding all you need to know for your study stay in BA.
     .row
       .col-lg-3.col-sm-3.focus-box.red.wow.fadeInLeft.animated data-wow-delay="0.15s" data-wow-duration="1.5s" data-wow-offset="30"
-        .service-icon data-ng-click="open('lg', 0)"
-          i.pixeden.pd-icon-map
+        = link_to(article_path(1))
+          .service-icon
+            i.pixeden.pd-icon-map
         h3.red-border-bottom The city
         p
-          | Here some information about BA. The image should link to a more detailed page about BA.
+          | Have you read about all the things you can do in BA?
       .col-lg-3.col-sm-3.focus-box.green.wow.fadeInLeft.animated data-wow-delay="0.15s" data-wow-duration="1.5s" data-wow-offset="30"
-        .service-icon data-ng-click="open('lg', 1)"
-          span.pixeden.pd-icon-culture
+        a href='http://fi.uba.ar/'
+          .service-icon
+            i.pixeden.pd-icon-culture
         h3.green-border-bottom Studying at FIUBA
         p
-          | Here some information about the Uni. The image should link to a more detailed page about FIUBA.
+          | Have you visited the web page of the Faculty?
       .col-lg-3.col-sm-3.focus-box.blue.wow.fadeInRight.animated data-wow-delay="0.15s" data-wow-duration="1.5s" data-wow-offset="30"
-        .service-icon data-ng-click="open('lg', 2)"
-          i.pixeden.pd-icon-search
+        = link_to(article_path(2))
+          .service-icon
+            i.pixeden.pd-icon-search
         h3.blue-border-bottom Accommodation
         p
-          | Here some information about how to find accommodation. The image should link to a more detailed page about how to find accommodation (some links maybe).
+          | Don't you know where to find your forthcoming accommodation?
       .col-lg-3.col-sm-3.focus-box.yellow.wow.fadeInRight.animated data-wow-delay="0.15s" data-wow-duration="1.5s" data-wow-offset="30"
-        .service-icon data-ng-click="open('lg', 3)"
-          i.pixeden.pd-icon-tablet
+        = link_to(article_path(3))
+          .service-icon
+            i.pixeden.pd-icon-tablet
         h3.yellow-border-bottom Legal information
         p
-          | Here some information about legals. The image should link to a more detailed page about legals.
+          | Some information about legals...
 
 section.separator-one
   .color-overlay
@@ -148,9 +149,6 @@ section.stats
         .stat.wow.fadeInUp.animated data-wow-delay="0.15s" data-wow-duration="1.5s" data-wow-offset="30"
           .icon-top.red-text
             i.icon-design-graphic-tablet-streamline-tablet
-          .stat-text
-            p.white-text class=("{{stat.border}}} {{stat.value}")
-            p  {stat.name}
 
 section#events.events
   .container
@@ -269,13 +267,13 @@ footer
     .col-md-2.company-details
       .icon-top.blue-text
         i.icon-fontawesome-webfont-101
-      | +54 011 43430092
+      | +54 011 43430092 <br/>
       | +54 011 43430893
     .col-lg-3.col-sm-3.copyright
       ul.social
         li
-          a href=""
+          a href="https://www.facebook.com/IN.FIUBA/"
             i.fa.fa-facebook.fa-2x
         li
-          a href=""
+          a href="https://www.instagram.com/in.fiuba/"
             i.fa.fa-instagram.fa-2x

@@ -1,0 +1,10 @@
+.article-header.details.white-text
+  h1.article-title
+  = @article.title
+.article-body.details
+  .row
+    .col-lg-4.col-md-4.column
+    .col-lg-8.col-md-8.column
+      p.wow.fadeInUp.animated data-wow-delay="0.15s" data-wow-duration="1.5s" data-wow-offset="30"
+      p.white-text
+        = @article.text
