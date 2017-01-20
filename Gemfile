@@ -74,6 +74,7 @@ gem 'kaminari'
 
 gem 'animate-rails'
 gem 'owlcarousel-rails'
+gem 'redcarpet'
 gem 'wow-rails'
 
 group :development do
