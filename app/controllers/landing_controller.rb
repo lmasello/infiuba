@@ -1,3 +1,6 @@
 class LandingController < ApplicationController
-  def index; end
+  def index
+    @activities = Activity.all
+    @events = Event.all.order(:date)
+  end
 end
