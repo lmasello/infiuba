@@ -72,10 +72,17 @@ gem 'versionist'
 # app frameworks and ORMs
 gem 'kaminari'
 
+gem 'angular-ui-bootstrap-rails'
+gem 'angularjs-rails'
 gem 'animate-rails'
 gem 'owlcarousel-rails'
 gem 'redcarpet'
 gem 'wow-rails'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-angular'
+  gem 'rails-assets-bootstrap'
+end
 
 group :development do
   # Gem to detect N+1 queries

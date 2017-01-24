@@ -13,10 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require angular
+//= require angular-resource
 //= require jquery.knob
 //= require jquery.nav
 //= require jquery.vegas.min
 //= require owl.carousel
 //= require smoothscroll
 //= require wow
+//= require bootstrap-sprockets
+//= require angular-sanitize
+//= require angular-animate
+//= require angular-ui-bootstrap-tpls
 //= require_tree .
