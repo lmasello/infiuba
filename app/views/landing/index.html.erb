@@ -287,7 +287,7 @@
 		<ul class="cbp-rfgrid">
         <!-- Activities -->
         <li data-ng-repeat="activity in activities" class="wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-          <a data-ng-click="open(activity.id)"><img src="" data-ng-src="{{activity.imageUrl}}"  alt="activity"/>
+          <a data-ng-click="open(activity.id)"><img src="" data-ng-src="{{activity.image_url}}"  alt="activity"/>
       			<div class="project-info">
       				<div class="project-details">
       					<h5 class="white-text red-border-bottom"> {{activity.name}} </h5>
@@ -315,7 +315,7 @@
       <div class="modal-body">
           <ul>
               <li data-ng-repeat="item in items">
-                  <a data-ng-href="{{item.album}}" target="_blank">{{ item.name }}</a>
+                  <a data-ng-href="{{item.url}}" target="_blank">{{ item.name }}</a>
               </li>
           </ul>
       </div>

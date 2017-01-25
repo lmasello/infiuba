@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('inFiubaApp').controller('activitiesCtrl', function ($scope, $modal, $log) {
+angular.module('inFiubaApp').controller('activitiesCtrl', function ($scope, $uibModal, $log) {
+//	$scope.activities = Activity.index()
 	$scope.activities = [
 		{
 			'name': 'Trips',
@@ -77,7 +78,7 @@ angular.module('inFiubaApp').controller('activitiesCtrl', function ($scope, $mod
 				activityItems = activity.items;
 		});
 
-    var modalInstance = $modal.open({
+    var modalInstance = $uibModal.open({
       animation: true,
       templateUrl: 'galleryModalContent.html',
       controller: 'galleryModalInstanceCtrl',
@@ -100,7 +101,7 @@ angular.module('inFiubaApp').controller('activitiesCtrl', function ($scope, $mod
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $uibModal service used above.
 
-angular.module('inFiubaApp').controller('galleryModalInstanceCtrl', function ($scope, $modalInstance, items) {
+angular.module('inFiubaApp').controller('galleryModalInstanceCtrl', function ($scope, $uibModalInstance, items) {
 
   $scope.items = items;
   $scope.selected = {
@@ -108,6 +109,6 @@ angular.module('inFiubaApp').controller('galleryModalInstanceCtrl', function ($s
   };
 
   $scope.ok = function () {
-    $modalInstance.close();
+    $uibModalInstance.close();
   };
 });

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('inFiubaApp').controller('generalInformationCtrl', function($scope, $modal, $log){
+angular.module('inFiubaApp').controller('generalInformationCtrl', function($scope, $uibModal, $log){
 	/*
 		Options: 0 (theCity), 1 (FIUBA), 2 (Accommodation), 3 (Legals)
 	*/
@@ -44,7 +44,7 @@ angular.module('inFiubaApp').controller('generalInformationCtrl', function($scop
 
 		$scope.animationsEnabled = true;
 
-	    var modalInstance = $modal.open({
+	    var modalInstance = $uibModal.open({
 	      animation: $scope.animationsEnabled,
 	      templateUrl: 'infoModalContent.html',
 	      controller: 'infoModalInstanceCtrl',
@@ -70,7 +70,7 @@ angular.module('inFiubaApp').controller('generalInformationCtrl', function($scop
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
 
-angular.module('inFiubaApp').controller('infoModalInstanceCtrl', function ($scope, $modalInstance, items) {
+angular.module('inFiubaApp').controller('infoModalInstanceCtrl', function ($scope, $uibModalInstance, items) {
 
   $scope.items = items;
   $scope.selected = {
@@ -83,10 +83,10 @@ angular.module('inFiubaApp').controller('infoModalInstanceCtrl', function ($scop
   $scope.information = items['information'];
 
   $scope.ok = function () {
-    $modalInstance.close($scope.selected.item);
+    $uibModalInstance.close($scope.selected.item);
   };
 
   $scope.cancel = function () {
-    $modalInstance.dismiss('cancel');
+    $uibModalInstance.dismiss('cancel');
   };
 });
