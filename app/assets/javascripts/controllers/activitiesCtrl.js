@@ -1,7 +1,13 @@
 'use strict';
 
-angular.module('inFiubaApp').controller('activitiesCtrl', function ($scope, $uibModal, $log) {
-//	$scope.activities = Activity.index()
+angular.module('inFiubaApp').factory("Activity", function($resource) {
+  return $resource("activities/:id", { id: '@id' }, {
+    index:   { method: 'GET', isArray: true, responseType: 'json' },
+  });
+})
+
+angular.module('inFiubaApp').controller('activitiesCtrl', function ($scope, $uibModal, $log, Activity) {
+	// $scope.activities = Activity.index()
 	$scope.activities = [
 		{
 			'name': 'Trips',

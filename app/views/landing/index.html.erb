@@ -72,58 +72,50 @@
 	<div class="row">
 
 		<!-- FIRST FOCUS BOXES -->
-		<div class="col-lg-3 col-sm-3 focus-box red wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+		<div class="col-lg-4 col-sm-4 focus-box red wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 			<div class="service-icon" data-ng-click="open('lg', 0)">
 				<i class="pixeden pd-icon-map"></i> <!-- FOCUS ICON-->
 			</div>
 			<h3 class="red-border-bottom">The city</h3> <!-- FOCUS HEADING -->
 			<p> <!-- FOCUS DESCRIPTION -->
-				 Here some information about BA. The image should link to a more detailed page about BA.
+				 Have you read about all the things you can do in BA?
 			</p>
 		</div>
 		<!-- / END FIRST FOCUS BOX. Other boxes has same format -->
 
-		<div class="col-lg-3 col-sm-3 focus-box green wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-			<div class="service-icon" data-ng-click="open('lg', 1)">
-				<span class="pixeden pd-icon-culture"></span>
-			</div>
+		<div class="col-lg-4 col-sm-4 focus-box green wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+			<a href='http://fi.uba.ar/'>
+				<div class="service-icon">
+					<span class="pixeden pd-icon-culture"></span>
+				</div>
+			</a>
 			<h3 class="green-border-bottom">Studying at FIUBA</h3>
 			<p>
-				 Here some information about the Uni. The image should link to a more detailed page about FIUBA.
+				 Have you visited the web page of the Faculty?
 			</p>
 		</div>
 
-		<div class="col-lg-3 col-sm-3 focus-box blue wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+		<div class="col-lg-4 col-sm-4 focus-box blue wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 			<div class="service-icon" data-ng-click="open('lg', 2)">
 				<i class="pixeden pd-icon-search"></i>
 			</div>
 			<h3 class="blue-border-bottom">Accommodation</h3>
 			<p>
-				 Here some information about how to find accommodation. The image should link to a more detailed page about how to find accommodation (some links maybe).
-			</p>
-		</div>
-
-		<div class="col-lg-3 col-sm-3 focus-box yellow wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-			<div class="service-icon" data-ng-click="open('lg', 3)">
-				<i class="pixeden pd-icon-tablet"></i>
-			</div>
-			<h3 class="yellow-border-bottom">Legal information</h3>
-			<p>
-				 Here some information about legals. The image should link to a more detailed page about legals.
+				 Don't you know where to find your forthcoming accommodation?
 			</p>
 		</div>
 	</div>
 	<!-- / END 4 FOCUS BOXES -->
 
-    <script type="text/ng-template" id="infoModalContent.html">
-        <div class="modal-header details white-text">
-            <h1 class="modal-title">{{sectionTitle}}</h1>
-			<p>
-				Here you will find some useful information about {{sectionTitle}}.
-				COMPLETE OR MODIFY IT
-			</p>
-        </div>
-        <div class="modal-body details">
+  <script type="text/ng-template" id="infoModalContent.html">
+    <div class="modal-header details white-text">
+	    <h1 class="modal-title">{{sectionTitle}}</h1>
+				<p>
+					Here you will find some useful information about {{sectionTitle}}.
+					COMPLETE OR MODIFY IT
+				</p>
+    </div>
+    <div class="modal-body details">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 column">
 					<div class="big-intro wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
@@ -139,14 +131,12 @@
 						 <p class="white-text" data-ng-bind-html="information"></p>
 					</p>
 				</div>
-
 			</div>
-        </div>
-		<div class="wow fadeInRight animated details" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+    </div>
+		<div class="wow details" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 			<a href="" class="btn btn-primary custom-button blue-btn inpage-scroll" data-ng-click="ok()">OK</a>
 		</div>
-    </script>
-
+  </script>
 </div> <!-- / END CONTAINER -->
 </section>  <!-- / END FOCUS SECTION -->
 
@@ -169,12 +159,10 @@
    Infriends Program SECTION
 ============================== -->
 
-  <section class="about-us" id="aboutInfriendsProgram" data-ng-controller='aboutInfriendsCtrl'>
+<section class="about-us" id="aboutInfriendsProgram" data-ng-controller='aboutInfriendsCtrl'>
 <div class="container">
-
 	<!-- SECTION HEADER -->
 	<div class="section-header">
-
 		<!-- SECTION TITLE -->
 		<h2 class="white-text">{{sectionTitle}}</h2>
 
@@ -187,7 +175,6 @@
 
 	<!-- 2 COLUMNS OF Infriends Program-->
 	<div class="row">
-
 		<!-- COLUMN 1 - BIG MESSAGE ABOUT THE PROGRAM-->
 		<div class="col-lg-4 col-md-4 column">
 			<div class="big-intro wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
@@ -210,7 +197,6 @@
 	</div>
 			<!-- 4 Features -->
 		<div class="row">
-
 			<!-- FIRST Feature -->
 			<div class="col-lg-3 col-sm-3 focus-box red wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 				<div class="service-icon">
@@ -254,9 +240,7 @@
 			</div>
 		</div>
 		<!-- / END 4 Features -->
-
 </div> <!-- / END CONTAINER -->
-
 </section> <!-- END Infriends Program SECTION -->
 
 <!-- =========================

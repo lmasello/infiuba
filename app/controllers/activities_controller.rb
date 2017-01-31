@@ -1,5 +1,8 @@
 class ActivitiesController < ApplicationController
   def index
-    render json: Activity.all
+    respond_to do |format|
+      format.json { render json: Activity.all }
+      format.html
+    end
   end
 end
