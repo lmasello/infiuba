@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require angular
 //= require angular-resource
+//= require underscore
 //= require jquery.knob
 //= require jquery.nav
 //= require jquery.vegas.min
@@ -25,4 +26,5 @@
 //= require angular-sanitize
 //= require angular-animate
 //= require angular-ui-bootstrap-tpls
+//= require restangular.min
 //= require_tree .

@@ -77,6 +77,7 @@ gem 'angularjs-rails'
 gem 'animate-rails'
 gem 'owlcarousel-rails'
 gem 'redcarpet'
+gem 'underscore-rails'
 gem 'wow-rails'
 
 source 'https://rails-assets.org' do
