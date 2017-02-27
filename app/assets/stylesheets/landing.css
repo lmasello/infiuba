@@ -360,7 +360,7 @@ input:focus {
 -----------------------------------------*/
 
 /*** SECTION HEADERS ***/
-.focus,.works,.about-us,.features,.packages,.products,.testimonial,.contact-us {
+.focus,.works,.about-us,.features,.packages,.products,.testimonial {
 	padding-top: 100px;
 }
 .section-header {
@@ -1374,29 +1374,6 @@ width: -webkit-calc(100% / 2);
 .purchase-now .red-btn:hover {
 	background: #bf3928;
 }
-
-/*----------------------------------------
- **   SECTION:  CONTACT US             -----
------------------------------------------*/
-
-.contact-us {
-	background: rgba(0, 0, 0, 0.5);
-	padding-bottom: 95px;
-}
-.contact-us .input-box,textarea {
-	width: 100%;
-	margin: auto;
-	margin-bottom: 20px;
-}
-.contact-us .custom-button {
-	float: right;
-}
-
-.success,
-.error {
-    display: none;
-}
-
 
 /* ----------------------------------------*/
 /*   SECTION:  FOOTER                        */
