@@ -11,7 +11,7 @@ ActiveAdmin.register Activity do
   end
 
   form do |f|
-    f.inputs "Admin Details" do
+    f.inputs "Activity Details" do
       f.input :name
       f.input :image_url
       f.input :details

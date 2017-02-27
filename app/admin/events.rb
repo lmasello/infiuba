@@ -12,7 +12,7 @@ ActiveAdmin.register Event do
   end
 
   form do |f|
-    f.inputs "Admin Details" do
+    f.inputs "Event Details" do
       column :name
       column :date
       column :url

@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resources :activities, only: [:index], defaults: { format: :json }
     resources :stats, only: [:index], defaults: { format: :json }
     resources :events, only: [:index], defaults: { format: :json }
+    resources :infriends_programs, only: [:index, :show], defaults: { format: :json }
+    resources :separators, only: [:index, :show], defaults: { format: :json }
   end
 
   get 'landing/index'

@@ -11,7 +11,7 @@ ActiveAdmin.register Album do
   end
 
   form do |f|
-    f.inputs "Admin Details" do
+    f.inputs "Album Details" do
       f.input :name
       f.input :url
       f.input :activity_id, as: :select, collection: Activity.all(&:name), include_blank: false

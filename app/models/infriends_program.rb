@@ -1,0 +1,2 @@
+class InfriendsProgram < ApplicationRecord
+end
