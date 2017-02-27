@@ -1,0 +1,19 @@
+<section class="stats" data-ng-controller="statsCtrl">
+	<div class="container">
+	    <!-- STATS -->
+	    <div class="row">
+	        <!-- START COLUMN -->
+	        <div data-ng-repeat="stat in stats" class="col-lg-6 col-sm-6">
+	            <div class="stat wow fadeInUp animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+	                <div class="icon-top red-text">
+	                    <i class="icon-design-graphic-tablet-streamline-tablet"></i>
+	                </div>
+	                <div class="stat-text">
+	                <p class="white-text blue-border-bottom">{{stat.value}}</p>
+	                <p>{{stat.name}}</p>
+	                </div>
+	            </div>
+	        </div> <!-- / END COLUMN -->
+	    </div>
+</div>
+</section>  <!-- / END STATS -->

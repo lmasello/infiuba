@@ -1,0 +1,58 @@
+<section class="works" id="activities" data-ng-controller='activitiesCtrl'>
+<div class="container">
+	<!-- SECTION HEADER -->
+	<div class="section-header">
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Activities</h2>
+		<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+		<p class="shortDescription">
+			Every semester we organize several kinds of activites.
+		</p>
+	</div>
+	<!-- / END SECTION HEADER -->
+	<div class="row projects">
+	<div id="loader">
+	    <div class="loader-icon"></div>
+	</div>
+	<div class="col-md-12" id="portfolio-list">
+		<!-- Activity ITEMS-->
+		<ul class="cbp-rfgrid">
+        <!-- Activities -->
+        <li data-ng-repeat="activity in activities" class="wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+          <a data-ng-click="open(activity.id)"><img src="" data-ng-src="/assets/{{activity.image_url}}"  alt="activity"/>
+      			<div class="project-info">
+      				<div class="project-details">
+      					<h5 class="white-text red-border-bottom">{{activity.name}}</h5>
+      					<div class="details white-text">{{activity.details}}</div>
+      				</div>
+      			</div>
+  			  </a>
+        </li>
+        <!-- / Activities -->
+        <!-- ... -->
+		</ul>
+	</div>
+	<!-- END OF Activity ITEMS-->
+  </div>
+
+	<!-- Activity DETAILS WILL BE LOADED HERE -->
+	<div id="loaded-content"></div>
+	<a id="back-button" class="red-btn" href="#"><i class="icon-fontawesome-webfont-27"></i> Go Back</a>
+
+  <script type="text/ng-template" id="galleryModalContent.html">
+      <div class="modal-header">
+          <h3 class="modal-title">Select album</h3>
+      </div>
+      <div class="modal-body">
+          <ul>
+              <li data-ng-repeat="item in items">
+                  <a data-ng-href="{{item.url}}" target="_blank">{{ item.name }}</a>
+              </li>
+          </ul>
+      </div>
+      <div class="modal-footer">
+          <button class="btn btn-primary" type="button" data-ng-click="ok()">Done!</button>
+      </div>
+  </script>
+</div> <!-- / END CONTAINER -->
+</section> <!-- / END activities SECTION -->

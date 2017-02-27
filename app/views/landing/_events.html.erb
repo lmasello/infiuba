@@ -1,0 +1,41 @@
+<section class="events" id="events" data-ng-controller="events">
+<div class="container">
+	<!-- SECTION HEADER -->
+	<div class="section-header">
+	  	<!-- SECTION TITLE -->
+	  	<h2 class="dark-text">Events</h2>
+	    <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+		<p class="shortDescription">
+			See below the list of forthcoming events.
+		</p>
+ 	</div>
+
+	<section id="news" class="white-bg">
+		<div class="timeline" data-ng-repeat="(month_year, events) in eventsPerMonth">
+			<div class="date-title">
+				<span>{{month_year}}</span>
+			</div>
+			<div class="row">
+				<div data-ng-repeat="event in events">
+					<div data-ng-class-even="{'col-sm-6 news-item right':'even'}" data-ng-class-odd="{'col-sm-6 news-item':'odd'}">
+						<div class="news-content">
+							<div class="date">
+								<p>{{event.date | date : 'd'}}</p>
+								<small>{{event.date | date : 'EEE'}}</small>
+							</div>
+							<h3 class="news-title">{{event.name}}</h3>
+							<div class="news-media">
+								<a class="colorbox cboxElement" data-ng-href="{{event.url}}" target="_blank">
+                	<img src="" class="img-responsive" data-ng-src="/assets/{{event.image_url}}" alt="">
+                </a>
+							</div>
+							<p> {{event.details}} </p>
+							<a class="read-more" data-ng-href="{{event.url}}" target="_blank">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div> <!-- / END CONTAINER -->
+</section> <!-- / END EVENTS SECTION -->

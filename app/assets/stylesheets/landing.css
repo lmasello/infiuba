@@ -1118,9 +1118,6 @@ width: -webkit-calc(100% / 2);
 **   SECTION:  PRODUCTS             -----
 -----------------------------------------*/
 
-.products {
-	background: url(../images/product-bg.png) 50% 0 repeat;
-}
 .products .color-overlay {
 	background: rgba(39,144,176, 0.96);
 	margin-top: -100px;
@@ -1129,29 +1126,8 @@ width: -webkit-calc(100% / 2);
 }
 
 /*--ITEMS IMAGES--*/
-.item-1 {
-	background-image: url(../images/products/1.png);
-}
-.item-2 {
-	background-image: url(../images/products/2.png);
-}
-.item-3 {
-	background-image: url(../images/products/3.png);
-}
-.item-4 {
-	background-image: url(../images/products/4.png);
-}
-.item-5 {
-	background-image: url(../images/products/5.png);
-}
-.item-6 {
-	background-image: url(../images/products/6.png);
-}
-.item-7 {
-	background-image: url(../images/products/7.png);
-}
-.item-8 {
-	background-image: url(../images/products/8.png);
+.team-img {
+  max-width: 50%;
 }
 
 /*---ITEM STYLE ---*/
@@ -1449,7 +1425,7 @@ footer {
 }
 .social li a {
 	color: #939393;
-	font-size: 18px;
+	font-size: 30px;
 }
 .social li a:hover {
 	color: #e96656;
